@@ -19,20 +19,22 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="./CSS/estilos.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./src/css/responsivo.css" />
 
     <title>Gabriel Lima - Retratos</title>
+
+    
   </head>
   <body>
-    <div class="fundo-video">
-      <!-- <video class="video" autoplay="" loop="" muted="">
+    <!-- <div class="fundo-video">
+      <video class="video" autoplay="" loop="" muted="">
         <source src="./src/video/video-mario.mp4" type="video/mp4" />
-      </video> -->
-    </div>
+      </video>
+    </div> -->
      <header class="cabecalho">
-      <a>
+      <a href="#cabecalho">
         <img class="logo" src="./imagens/logoicon.ico" alt="Logo" />
       </a>
       <nav>
@@ -44,47 +46,6 @@
         </ul>
       </nav>
     </header>
-    <div class="slider">
-      <div class="slides">
-        <!-- Radio Buttons -->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-        <!-- Navegação buttons -->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-        </div>
-        <!-- Slide das imagens -->
-        <div class="slide1">
-          <img src="./imagens/carrossel/carrossel1.jpg" alt="Imagem 1">
-        </div>
-        <div class="slide2">
-          <img src="./imagens/carrossel/carrossel2.jpg" alt="Imagem 2">
-        </div>
-        <div class="slide3">
-          <img src="./imagens/carrossel/carrossel3.jpg" alt="Imagem 3">
-        </div>
-        <div class="slide4">
-          <img src="./imagens/carrossel/carrossel4.jpg" alt="Imagem 4">
-        </div>
-        <div class="slide5">
-          <img src="./imagens/carrossel/carrossel5.jpg" alt="Imagem 5">
-        </div>
-      </div>
-      <div class="manual-navigation">
-        <label for="radio1" class="manual-btn1"></label>
-        <label for="radio2" class="manual-btn2"></label>
-        <label for="radio3" class="manual-btn3"></label>
-        <label for="radio4" class="manual-btn4"></label>
-        <label for="radio5" class="manual-btn5"></label>
-      </div>
-    </div>
     <main class="container">
       <div class="sobreMim">
         <h1>Sobre Mim</h1>
@@ -104,17 +65,12 @@
         </p>
       </div>
       <div class="foto">
-        <img src="./imagens/eu_inicial.jpg" alt="Foto Sobre Mim" height="500px"/>
+        <img src="./imagens/eu_inicial.jpg" alt="Foto Sobre Mim"/>
       </div>
     </main>
 
-    
-      
-    
-      
-
-    <a
-      href="https://wa.me/5579981338664?text=Olá%20gostaria%20de%20um%20orçamento!"
+    <div class="whatsapp">
+      <a href="https://wa.me/5579981338664?text=Olá%20gostaria%20de%20um%20orçamento!"
       style="
         position: fixed;
         width: 60px;
@@ -129,10 +85,11 @@
         box-shadow: 1px 1px 2px #888;
         z-index: 1000;
       "
-      target="_blank"
-    >
+      target="_blank">
       <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
     </a>
+    </div>
+    
 
     <script src="./src/js/index.js"></script>
   </body>
