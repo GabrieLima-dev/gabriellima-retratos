@@ -3,43 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./imagens/logoicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <title>Gabriel Lima - Retratos</title>
+    <link rel="shortcut icon" href="./imagens/logoicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="./CSS/estilos.css" />
     <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Gabriel Lima - Retratos</title>
   </head>
   <body>
     <div class="fundo-video">
-      <video class="video" autoplay="" loop="" muted="">
-        <source src="./src/video/video-mario.mp4" type="video/mp4">
-      </video>
+      <!-- <video class="video" autoplay="" loop="" muted="">
+        <source src="./src/video/video-mario.mp4" type="video/mp4" />
+      </video> -->
     </div>
-
-    <div>
-      <video src=""></video>
-    </div>
-
-    <header class="cabecalho">
+     <header class="cabecalho">
       <a>
         <img class="logo" src="./imagens/logoicon.ico" alt="Logo" />
       </a>
       <nav>
         <ul class="menu">
-          <li>Home</li>
-          <li>Ensaios</li>
-          <li>Eventos</li>
-          <li>Contatos</li>
+          <li><a href="#cabechalho">Home</a></li>
+          <li><a href="#ensaios">Ensaios</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </header>
+    <div class="slider">
+      <div class="slides">
+        <!-- Radio Buttons -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <!-- Navegação buttons -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+        <!-- Slide das imagens -->
+        <div class="slide1">
+          <img src="./imagens/carrossel/carrossel1.jpg" alt="Imagem 1">
+        </div>
+        <div class="slide2">
+          <img src="./imagens/carrossel/carrossel2.jpg" alt="Imagem 2">
+        </div>
+        <div class="slide3">
+          <img src="./imagens/carrossel/carrossel3.jpg" alt="Imagem 3">
+        </div>
+        <div class="slide4">
+          <img src="./imagens/carrossel/carrossel4.jpg" alt="Imagem 4">
+        </div>
+        <div class="slide5">
+          <img src="./imagens/carrossel/carrossel5.jpg" alt="Imagem 5">
+        </div>
+      </div>
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn1"></label>
+        <label for="radio2" class="manual-btn2"></label>
+        <label for="radio3" class="manual-btn3"></label>
+        <label for="radio4" class="manual-btn4"></label>
+        <label for="radio5" class="manual-btn5"></label>
+      </div>
+    </div>
     <main class="container">
       <div class="sobreMim">
         <h1>Sobre Mim</h1>
@@ -55,21 +100,40 @@
           outra área em que não sai da minha vida.
         </p>
         <p>
-          Comecei a tirar fotos para registrar momentos que me tocavam e ao
-          mostrar essas fotos, acabei registrando momentos em eventos e
-          ocasiosiões especiais em família e amigos.
+          Comecei a tirar fotos para registrar momentos que me tocavam e ao mostrar essas fotos, acabei registrando momentos em eventos e ocasiões especiais em família e amigos.
         </p>
       </div>
-      <img class="foto" />
-      <img src="./imagens/eu_inicial.jpg" alt="Foto Sobre Mim" />
+      <div class="foto">
+        <img src="./imagens/eu_inicial.jpg" alt="Foto Sobre Mim" height="500px"/>
+      </div>
     </main>
-  
 
     
-  <a href="https://wa.me/5579981338664?text=Olá%20gostaria%20de%20um%20orçamento!" style="position:fixed;width:60px;height:60px;bottom:10px;right:10px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;z-index:1000;" target="_blank">
-  <i style="margin-top:16px" class="fa fa-whatsapp"></i>
-  </a>
+      
+    
+      
 
-  <script src="./src/js/index.js"></script>
+    <a
+      href="https://wa.me/5579981338664?text=Olá%20gostaria%20de%20um%20orçamento!"
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 10px;
+        right: 10px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      "
+      target="_blank"
+    >
+      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+    </a>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
