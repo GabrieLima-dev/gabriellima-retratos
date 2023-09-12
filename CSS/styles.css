@@ -9,13 +9,12 @@ h1 {
     z-index: 1;
     position: fixed;
     width: 100vw;
-    overflow: hidden;
+    max-width: 1440px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 3%;
     border-radius: 20px;
-    align-items: center;  
+    align-items: center;   
 }
 .cabecalho .logo {
     width: 40%;
@@ -25,7 +24,7 @@ h1 {
 .cabecalho .menu{
     display: flex;
     align-items: center; 
-    box-shadow: 1px 1px 4px color(#2c2c2c) 
+    box-shadow: 1px 1px 4px color(#2c2c2c); 
 }
 
 .cabecalho nav li a { 

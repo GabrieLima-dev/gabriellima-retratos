@@ -1,10 +1,12 @@
+@media (max-width: 1440px) {
+}
+
 @media (max-width: 770px) {
     body {
         background-color: #ffffff;
     }
 
     .container {
-        /* flex-wrap: wrap; */
         flex-direction: column;
         justify-content: center;
         height: auto;
@@ -13,6 +15,11 @@
     }
 
     .container .foto {
+        max-width: 50%;
+        min-width: 50%;
+        padding: 0 auto;
+    }
+    .whatsapp {
         max-width: 50%;
         min-width: 50%;
         padding: 0 auto;
