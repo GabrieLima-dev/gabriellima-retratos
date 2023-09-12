@@ -21,22 +21,17 @@
 
     <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./src/css/responsivo.css" />
+    <link rel="stylesheet" href="./CSS/responsivo.css" />
 
     <title>Gabriel Lima - Retratos</title>
   </head>
   <body>
-    <!-- <div class="fundo-video">
-      <video class="video" autoplay="" loop="" muted="">
-        <source src="./src/video/video-mario.mp4" type="video/mp4" />
-      </video>
-    </div> -->
-     <header class="cabecalho">
+     <header class="cabecalho" id="cabecalho">
       <a href="#cabecalho">
         <img class="logo" src="./imagens/logoicon.ico" alt="Logo" />
       </a>
       <nav>
-        <ul class="menu">
+        <ul class="menu" id="menu">
           <li><a href="#cabechalho">Home</a></li>
           <li><a href="#ensaios">Ensaios</a></li>
           <li><a href="#eventos">Eventos</a></li>
@@ -109,6 +104,7 @@
 
     <script src="./src/js/index.js"></script>
     <script src="./JS/menu.js"></script>
+    <script src="./JS/transition_menu.js"></script>
     <script>
       const slides = document.querySelectorAll(".carousel-slide");
       const dots = document.querySelectorAll(".carousel-dot");
