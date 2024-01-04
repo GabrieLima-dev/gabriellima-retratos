@@ -13,9 +13,14 @@ html {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: rgba(80, 80, 80, 0.384);
     display: flex;
     justify-content: space-between;
+    z-index: 1000; /* Garante que o navbar apareça acima de outros elementos na página */
 }
 
 .nav-left{
@@ -41,23 +46,6 @@ html {
     color: #9b2b2b;
 }
 
-@media (max-width: 768px) {
-    .nav-left, .nav-right {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        float: none;
-    }
-
-    .nav-right {
-        display: none;
-    }
-
-    .navbar a.icon {
-        display: block;
-    }
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
@@ -65,7 +53,7 @@ html {
     width: 100%; /* Define a largura total do container */
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 1%
+    padding: 6% 1% 1% 1%;
 }
 
 #eventos{
@@ -92,11 +80,16 @@ html {
     height: 100%;
     padding: 10px; /* Espaço entre as imagens */
 }
+.photoEu img {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
 
 .text {
     grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-    padding: 10px;
-    font-size: 25px;
+    padding-right: 5%;
+    font-size: 30px;
 }
 
 .text h1{
