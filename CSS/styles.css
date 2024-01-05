@@ -5,9 +5,8 @@ h1 {
 html {
     margin: 0;
     padding: 0;
-    justify-content: center;
-    max-width: 1920px;
-    background: #b3b1ab;
+    justify-content: center; 
+    background: #F3D8CF;
     height: 100vh;
     display: flex;
 }
@@ -17,9 +16,10 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(80, 80, 80, 0.384);
+    background: rgba(255, 255, 255, 0.384);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 1000; /* Garante que o navbar apareça acima de outros elementos na página */
 }
 
@@ -29,8 +29,9 @@ html {
 }
 
 .nav-right{
-    padding-top: 2%;
-    padding-right: 3%;
+    display: flex;
+  justify-content: flex-end; /* Alinha os itens à direita do contêiner */
+  align-items: center; /* Centraliza verticalmente os itens */
 }
 
 .navbar a {
@@ -38,13 +39,60 @@ html {
     color: #000000;
     padding: 20px 20px;
     border-radius: 50px;
-    transition: 0.5s;  
+    transition: 0.5s; 
 }
 
 .nav-right a:hover {
     background-color: rgb(243, 243, 243);
     color: #9b2b2b;
 }
+
+.bemVindo {
+    display: block;
+  overflow: hidden;
+  position: relative;
+  }
+  
+  .bemVindo img {
+  width: 100%;
+  height: auto; /* Mantém a proporção original da imagem */
+  max-height: 1080px;
+  }
+
+  .bemVindo .textoBemVindo {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 4vw;
+    font-family: 'cursiva', cursive;
+    z-index: 2; /* Coloca o texto acima da imagem e do overlay */
+  }
+  
+  /* Adicione algum espaçamento interno à .bemVindo, se necessário */
+  .bemVindo::before {
+    content: ""; /* Adiciona um pseudo-elemento para controle do espaçamento */
+    display: block;
+    padding-top: 6%;
+    
+  }
+  
+  /* Adicione um overlay para melhor legibilidade do conteúdo sobre a imagem */
+  .bemVindo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Coloca o overlay acima da imagem */
+    pointer-events: none; /* Garante que o overlay não interfere com eventos de clique */
+    mix-blend-mode: multiply; /* Adiciona modo de mistura para aplicar o overlay na imagem */
+  }
 
 .container {
     display: grid;
@@ -53,7 +101,7 @@ html {
     width: 98%; /* Define a largura total do container */
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 6% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
 }
 
 
@@ -71,7 +119,7 @@ html {
     transition: transform 0.3s ease;
 }
 
-.rowmt-3{
+.rowmt-3{ /*posicionamento das imagens de EVENTOS da 2 linha*/
     margin-top: -14%;
 }
 
@@ -81,25 +129,28 @@ html {
     left: 30%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
+    font-size: 2vh;
     font-weight: bold;
     opacity: 0; /* Inicialmente, o texto é invisível */
-    transition: opacity 0.5s ease; /* Transição para a opacidade do texto */
+    transition: opacity 0.8s ease; /* Transição para a opacidade do texto */
+
   }
 
 
 .photoEu img {  /* Imagem Sobre Mim */
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    display: block; /* Garante que a margem automática funcione corretamente */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  width: 97%;
+  height: auto; /* Mantém a proporção original da imagem */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .text {     /* Texto Sobre Mim */
     grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-    font-size: 30px;
-    transition: opacity 0.5s ease;
+    font-size: 2vw;
+    text-align: center;
 }
 
 .text h1{
@@ -136,22 +187,27 @@ html {
     bottom: 5%;
     right: 2%;
     z-index: 1000;
+    
   }
 
   .whatsapp a {
     display: block;
     width: 3vw; /* 10% of the viewport width */
     height: 3vw; /* 10% of the viewport width */
+    min-width: 60px; /* Largura mínima */
+    min-height: 60px; /* Altura mínima */
     background-color: #25d366;
     color: #fff;
     border-radius: 50%;
     text-align: center;
+    position: relative;
+    
   }
 
   .whatsapp img {
-    width: 90%;
-    padding-top: 6%;
+    width: 90%; /* Largura proporcional à largura do botão */
     height: auto;
+    padding-top: 6%;
   }
 
   .photo:hover, .photo:hover .overlay-text {

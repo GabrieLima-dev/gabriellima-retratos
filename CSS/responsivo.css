@@ -1,26 +1,22 @@
-@media (max-width: 600px){
+@media (max-width: 1060px){
     .overlay-text{
-        font-family: 'Poppins';
-        color: #fcfcfc;
-        font-size: 3vh;
-        margin-top: -5vh;
-        margin-left: 5%;
+        font-size:  1vh;
     }
+    
 }
 
-
+@media (max-width: 520px){
+    .overlay-text{
+        font-size:  0.5vh;
+    }
+    
+}
 /* Estilos para telas pequenas (máximo de 770 pixels) */
 @media (max-width: 770px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: rgba(80, 80, 80, 0.384);
-        display: flex;
-        justify-content: space-between;
-        z-index: 1000; /* Garante que o navbar apareça acima de outros elementos na página */
-    }
+
+    .bemVindo .textoBemVindo {
+        font-size: 6vw; /* Ajuste conforme necessário para telas menores */
+      }
 
     .container {
         display: flex;
@@ -50,6 +46,11 @@
         padding: 16px;
         animation-duration: 1s;
         margin-left: -100vw;
+    }
+
+    .bemVindo{
+        max-width: 100%; /* Ajuste a largura da foto conforme necessário */
+        min-width: 100%; 
     }
 
     .row, .rowmt-3{
