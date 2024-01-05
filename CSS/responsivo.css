@@ -26,11 +26,6 @@
         min-width: 80%; 
     }
 
-    .whatsapp {
-        max-width: 10%; /* Ajuste a largura do WhatsApp conforme necessário */
-        min-width: 10%; 
-    }
-
     .container .sobreMim {
         text-align: center;
     }
