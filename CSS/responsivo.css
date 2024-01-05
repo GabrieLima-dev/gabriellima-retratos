@@ -1,3 +1,14 @@
+@media (max-width: 600px){
+    .overlay-text{
+        font-family: 'Poppins';
+        color: #fcfcfc;
+        font-size: 3vh;
+        margin-top: -5vh;
+        margin-left: 5%;
+    }
+}
+
+
 /* Estilos para telas pequenas (máximo de 770 pixels) */
 @media (max-width: 770px) {
     .navbar {
@@ -41,9 +52,9 @@
         margin-left: -100vw;
     }
 
-    .photo {
-        flex: 0 0 100%;
-        grid-column: 1 / -1;
+    .row, .rowmt-3{
+        display: flex; 
+        justify-content: center;
     }
 
     .text {

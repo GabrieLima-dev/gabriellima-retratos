@@ -56,39 +56,44 @@ html {
     padding: 6% 1% 1% 1%;
 }
 
-#eventos{
-    display: flex;
-    flex-direction: column; /* Alinha os rows verticalmente */
-    align-items: center; /* Centraliza os rows horizontalmente */
-    padding-bottom: 5%;
+
+.row, .rowmt-3{   /*posicionamento das imagens de EVENTOS*/
+    display: flex; 
+    justify-content: center;
+    padding-left: 1%;
+    padding-top: 1%;
 }
 
-.row, .rowmt-3{
-    display: flex;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    margin: 5px 0; /* Espaço entre as linhas de imagens */
+.photo img {    /*tamanho das imagens de EVENTOS*/
+    width: 98%;
+    height: 70%;
+    border-radius: 10px;
 }
 
-.photo {
-    /* grid-column: 1 / 2; A foto ocupa a primeira coluna */
-    flex: 0 0 32.7%; /* Cada imagem ocupa 1/3 da largura da linha */
-    padding: 0px;
+.rowmt-3{
+    margin-top: -14%;
 }
 
-.photo img {
-    width: 80%;
-    height: 50%;
-    padding: 10px; /* Espaço entre as imagens */
+.overlay-text{
+    font-family: 'Poppins';
+    color: #fcfcfc;
+    font-size: 3vh;
+    font-family:cursive;
+    font-style: italic;
+    margin-top: -6vh;
+    margin-left: 5%;
 }
+
+
 .photoEu img {
     width: 100%;
     height: 100%;
     padding: 0px;
+    border-radius: 10px;
 }
 
 .text {
     grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-    /* padding-right: 5%; */
     font-size: 30px;
 }
 
@@ -99,6 +104,7 @@ html {
 .contatos {
     padding: 2%;
     font-size: 25px;
+    margin-top: -18%;
 }
 
 .contatos h1{
@@ -115,7 +121,6 @@ html {
     margin-top: 10px;
     padding: 1%;   
 }
-
 
 .whatsapp {
     position: fixed;
