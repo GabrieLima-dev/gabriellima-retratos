@@ -110,22 +110,31 @@ html {
 }
 
 
-.row, .rowmt-3{   /*posicionamento das imagens de EVENTOS*/
+.row, .rowmt-2{   /*posicionamento das imagens de EVENTOS*/
     display: flex; 
-    justify-content: center;
-    padding-left: 1%;
-    padding-top: 1%;
+    overflow: hidden;
+    margin: 0;
+    
+}
+.photo {
+  margin: 0; 
+}
+.photo a {
+  display: block; /* Garantir que o link ocupe todo o espaço disponível */
 }
 
-.photo img {    /*tamanho das imagens de EVENTOS*/
-    width: 98%;
-    height: 70%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.photo img {
+  width: 97%;
+  height: 50%;
+  object-fit: cover; /* Manter a proporção e cobrir completamente o contêiner */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin: 0;
 }
 
-.rowmt-3{ /*posicionamento das imagens de EVENTOS da 2 linha*/
-    margin-top: -14%;
+.rowmt-2{ /*posicionamento das imagens de EVENTOS da 2 linha*/
+    margin-top: -30%;
 }
 
 .overlay-text {       /* texto de Eventos */

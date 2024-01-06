@@ -1,0 +1,26 @@
+@import url('./styles.css');
+
+.row, .rowmt-2, .rowmt-3{   /*posicionamento das imagens de EVENTOS*/
+    display: flex; 
+    overflow: hidden;
+    margin: 0;
+}
+.row{
+    padding-top: 8%;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.photo a {
+    display: block; /* Garantir que o link ocupe todo o espaço disponível */
+  }
+
+.photo img {    /*tamanho das imagens de EVENTOS*/
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}

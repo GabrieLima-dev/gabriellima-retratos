@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventos</title>
-  <link rel="stylesheet" href="eventos.css">
-</head>
-<body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagens/logo-black.svg" />
+    <title>Gabriel Lima - Retratos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/responsivo.css" />
+    <link rel="stylesheet" href="./CSS/eventos.css">
 
-<!-- Criando linhas de fotos -->
-<section class="linha-fotos">
-  <div class="photo">
-    <img src="./imagens/eventos/_MG_1098.jpg" alt="Evento 1">
-  </div>
-  <div class="photo">
-    <img src="./imagens/eventos/_MG_1099.jpg" alt="Evento 2">
-  </div>
-  <!-- Adicione mais imagens conforme necessário -->
-</section>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="./index.html#bemVindo">
+          <img class="logo" src="./imagens/logo-black.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="nav-right">
+          <a href="./index.html#eventos">Eventos</a>
+          <a href="./index.html#contatos">Contatos</a>
+      </div>
+    </nav>
+    <section id="eventos" class="mt-4">
+      <div class="row">
+        <div class="photo">
+          <div id="gallery"></div>
+        </div>
+    </section>
 
-<section class="linha-fotos">
-  <!-- Adicione mais imagens conforme necessário -->
-</section>
-
-<!-- Criando uma modal para exibir a imagem ampliada -->
-<div id="modal" class="modal">
-  <span class="fechar-modal" onclick="fecharModal()">&times;</span>
-  <img id="imagemAmpliada" class="imagem-ampliada" src="" alt="Imagem Ampliada">
-</div>
-
-<script src="./Javascript/modal.js"></script>
-</body>
+    <div class="whatsapp">
+      <a
+        href="https://wa.me/5579981338664?text=Olá%20gostaria%20de%20um%20orçamento!">
+        <img src="./imagens/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+    </div>
+    
+    <footer>
+      <div id="footer">
+        <h6>Todos os direitos Reservados - Copyright © 2024</h6>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
