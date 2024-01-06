@@ -9,6 +9,8 @@ html {
     background: #F3D8CF;
     height: 100vh;
     display: flex;
+    max-width: 2500px;
+    max-height: 5395px;
 }
 
 .navbar {
@@ -21,6 +23,8 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 1000; /* Garante que o navbar apareça acima de outros elementos na página */
+    max-width: 2500px;
+    max-height: 5395px;
 }
 
 .nav-left{
@@ -67,7 +71,7 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 4vw;
+    font-size: 8vh;
     font-family: 'cursiva', cursive;
     z-index: 2; /* Coloca o texto acima da imagem e do overlay */
   }
@@ -102,6 +106,7 @@ html {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 1% 1% 1% 1%;
+    max-height: 1228px;
 }
 
 
@@ -117,7 +122,6 @@ html {
     height: 70%;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    max-width: 1080px;
 }
 
 .rowmt-3{ /*posicionamento das imagens de EVENTOS da 2 linha*/
@@ -150,7 +154,7 @@ html {
 
 .text {     /* Texto Sobre Mim */
     grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-    font-size: 2vw;
+    font-size: 5vh;
     text-align: center;
 }
 
@@ -164,7 +168,7 @@ html {
 
 .contatos {
     padding: 2%;
-    font-size: 3vw;
+    font-size: 5vh;
     margin-top: -18%;
 }
 
@@ -179,7 +183,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente o conteúdo */
-  font-size: 3vw;
+  font-size: 4vh;
   color: #000000;
   padding: 1vh; /* Ajuste conforme necessário */
   box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */   

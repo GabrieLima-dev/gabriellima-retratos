@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <link rel="stylesheet" href="eventos.css">
+</head>
+<body>
+
+<!-- Criando linhas de fotos -->
+<section class="linha-fotos">
+  <div class="photo">
+    <img src="./imagens/eventos/_MG_1098.jpg" alt="Evento 1">
+  </div>
+  <div class="photo">
+    <img src="./imagens/eventos/_MG_1099.jpg" alt="Evento 2">
+  </div>
+  <!-- Adicione mais imagens conforme necessário -->
+</section>
+
+<section class="linha-fotos">
+  <!-- Adicione mais imagens conforme necessário -->
+</section>
+
+<!-- Criando uma modal para exibir a imagem ampliada -->
+<div id="modal" class="modal">
+  <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+  <img id="imagemAmpliada" class="imagem-ampliada" src="" alt="Imagem Ampliada">
+</div>
+
+<script src="./Javascript/modal.js"></script>
+</body>
+</html>
