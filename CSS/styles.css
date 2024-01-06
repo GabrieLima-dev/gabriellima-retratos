@@ -117,6 +117,7 @@ html {
     height: 70%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    max-width: 1080px;
 }
 
 .rowmt-3{ /*posicionamento das imagens de EVENTOS da 2 linha*/
@@ -124,17 +125,17 @@ html {
 }
 
 .overlay-text {       /* texto de Eventos */
-    position: absolute;
-    top: 65%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2vh;
-    font-weight: bold;
-    opacity: 0; /* Inicialmente, o texto é invisível */
-    transition: opacity 0.8s ease; /* Transição para a opacidade do texto */
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  opacity: 0; /* Inicialmente, o texto é invisível */
+  transition: opacity 0.8s ease; /* Transição para a opacidade do texto */
 
-  }
+}
 
 
 .photoEu img {  /* Imagem Sobre Mim */
@@ -163,7 +164,7 @@ html {
 
 .contatos {
     padding: 2%;
-    font-size: 25px;
+    font-size: 3vw;
     margin-top: -18%;
 }
 
@@ -172,14 +173,16 @@ html {
 }
 
 #footer {         /* Todos os Direitos Reservados */
-    background: rgba(80, 80, 80, 0.384);
-    justify-content: center;
-    display:flex;
-    font-size: 25px;
-    color: #000000;	
-    font-weight: 100px;
-    margin-top: 10px;
-    padding: 1%;   
+  background: rgba(80, 80, 80, 0.384);
+  bottom: 0; /* Fixa o rodapé na parte inferior da tela */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  font-size: 3vw;
+  color: #000000;
+  padding: 1vh; /* Ajuste conforme necessário */
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */   
 }
 
 .whatsapp {      /* Botão do Whatsapp */
