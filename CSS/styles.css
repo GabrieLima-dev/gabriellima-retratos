@@ -52,7 +52,7 @@ html {
 }
 
 .bemVindo {
-    display: block;
+  display: block;
   overflow: hidden;
   position: relative;
   }
@@ -60,7 +60,6 @@ html {
   .bemVindo img {
   width: 100%;
   height: auto; /* Mantém a proporção original da imagem */
-  max-height: 1080px;
   }
 
   .bemVindo .textoBemVindo {
@@ -76,15 +75,14 @@ html {
     z-index: 2; /* Coloca o texto acima da imagem e do overlay */
   }
   
-  /* Adicione algum espaçamento interno à .bemVindo, se necessário */
   .bemVindo::before {
     content: ""; /* Adiciona um pseudo-elemento para controle do espaçamento */
     display: block;
-    padding-top: 6%;
+    padding-top: 7%;
     
   }
   
-  /* Adicione um overlay para melhor legibilidade do conteúdo sobre a imagem */
+  /* Adiciona um overlay para melhor legibilidade do conteúdo sobre a imagem */
   .bemVindo::after {
     content: "";
     position: absolute;
@@ -99,86 +97,81 @@ html {
   }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
-    gap: 20px; /* Espaço entre as colunas */
-    width: 98%; /* Define a largura total do container */
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 1% 1% 1% 1%;
-    max-height: 1228px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
+  gap: 20px; /* Espaço entre as colunas */
+  width: 98%; /* Define a largura total do container */
+  background: #fff;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  padding: 1% 1% 1% 1%;
 }
 
+.espacamento{
+  padding-bottom: 1%;
+}
+
+.photoEu img {  /* Imagem Sobre Mim */
+  display: block; /* Garante que a margem automática funcione corretamente */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  width: 100%;
+  height: auto; /* Mantém a proporção original da imagem */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.text {     /* Texto Sobre Mim */
+  grid-column: 2 / 2; /* O texto ocupa a segunda coluna */
+  font-size: 5vh;
+  text-align: center;
+}
+
+.text h1{
+ padding-bottom: 5%;
+}
+
+.show-text {
+  opacity: 1;
+}
 
 .row, .rowmt-2{   /*posicionamento das imagens de EVENTOS*/
     display: flex; 
     overflow: hidden;
-    margin: 0;
-    
+    margin: 0 auto;
+    justify-content: center;  /* Centraliza os itens horizontalmente */
+    align-items: center;      /* Centraliza os itens verticalmente */
 }
 .photo {
-  margin: 0; 
+  margin: 0;
 }
 .photo a {
   display: block; /* Garantir que o link ocupe todo o espaço disponível */
 }
 
 .photo img {
-  width: 97%;
-  height: 50%;
-  object-fit: cover; /* Manter a proporção e cobrir completamente o contêiner */
-  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 20px;
   transition: transform 0.3s ease;
   overflow: hidden;
-  margin: 0;
-}
-
-.rowmt-2{ /*posicionamento das imagens de EVENTOS da 2 linha*/
-    margin-top: -30%;
 }
 
 .overlay-text {       /* texto de Eventos */
   position: absolute;
-  top: 65%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 15%;
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: bold;
   opacity: 0; /* Inicialmente, o texto é invisível */
   transition: opacity 0.8s ease; /* Transição para a opacidade do texto */
-
 }
 
-
-.photoEu img {  /* Imagem Sobre Mim */
-    display: block; /* Garante que a margem automática funcione corretamente */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  width: 97%;
-  height: auto; /* Mantém a proporção original da imagem */
-  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.text {     /* Texto Sobre Mim */
-    grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-    font-size: 5vh;
-    text-align: center;
-}
-
-.text h1{
-   padding-bottom: 5%;
-}
-
-.show-text {
-    opacity: 1;
-  }
 
 .contatos {
     padding: 2%;
     font-size: 5vh;
-    margin-top: -18%;
 }
 
 .contatos h1{
@@ -227,6 +220,6 @@ html {
   }
 
   .photo:hover, .photo:hover .overlay-text {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse na imagem */
+    transform: scale(0.9); /* Efeito de zoom ao passar o mouse na imagem */
     opacity: 1; /* Torna o texto visível ao passar o mouse na imagem */
   }
