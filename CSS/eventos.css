@@ -1,6 +1,6 @@
 @import url('./styles.css');
 
-.row, .rowmt-2, .rowmt-3{   /*posicionamento das imagens de EVENTOS*/
+.row, .rowmt-2, .rowmt-3, .rowmt-4{   /*posicionamento das imagens de EVENTOS*/
     display: flex; 
     overflow: hidden;
     margin: 0;
