@@ -1,9 +1,143 @@
-/* Reset CSS */
-* {
+/* Normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Elemento principal do HTML */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Elemento do Corpo (Body) */
+body {
   margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
+}
+
+/* Elementos de Texto */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* Agrupamento de Estilos para Links */
+a {
+  background-color: transparent;
+}
+
+/* Redefinindo Bordas e Preenchimento */
+abbr[title] {
+  border-bottom: none; /* 4 */
+  text-decoration: underline; /* 4 */
+  text-decoration: underline dotted; /* 4 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Redefinindo Fonte */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 5 */
+  font-size: 1em;
+}
+
+/* Redefinindo Layout de Tabela */
+th {
+  font-weight: bolder;
+}
+
+/* Estilo Vertical para Código */
+kbd {
+  display: inline-block;
+}
+
+/* Ajustes para Firefox */
+/* Adiciona uma borda escura ao redor de bordas redondas ao adicionar um botão */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/* Corrige a desordem do Chrome e do Firefox no campo de progresso */
+progress {
   vertical-align: baseline;
 }
+
+/* Corrige o aumento inadequado do texto no IE */
+small {
+  font-size: 80%;
+}
+
+/* Torna as Tabelas Visíveis nos Estilos Herdados */
+/* Adiciona bordas e espaçamento para tabelas */
+table {
+  border-collapse: collapse;
+}
+
+/* Corrige Erros Comuns e Melhora a Usabilidade */
+/* Adiciona bordas em elementos de imagem para evitar layout irregular em navegadores modernos */
+img {
+  border-style: none;
+}
+
+/* Reset de Margens para a Tag do Campo Legado */
+/* Adiciona a redefinição da margem para os elementos mais comuns */
+/* Reseta margens e paddings em listas */
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adiciona espaço mínimo em torno dos elementos do tipo lista */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Corrige Erro de Lista dentro do IE */
+/* Adiciona margem inferior apenas para listas ordenadas e não ordenadas no IE */
+/* Adiciona margem esquerda para listas ordenadas e não ordenadas no IE */
+/* Corrige listas dentro de descrições (dl) no IE */
+/* Corrige bordas nas listas dentro de descrições (dl) no IE */
+/* Corrige a orientação da fonte nas listas dentro de descrições (dl) no IE */
+/* Adiciona espaço vertical em listas dentro de descrições (dl) no IE */
+/* Corrige a margem superior no bloco de listas dentro de descrições (dl) no IE */
+/* Corrige a margem inferior no bloco de listas dentro de descrições (dl) no IE */
+/* Adiciona a redefinição da margem para os elementos mais comuns */
+/* Reseta margens e paddings em listas */
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adiciona espaço mínimo em torno dos elementos do tipo lista */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Corrige Erro de Lista dentro do IE */
+/* Adiciona margem inferior apenas para listas ordenadas e não ordenadas no IE */
+/* Adiciona margem esquerda para listas ordenadas e não ordenadas no IE */
+/* Corrige listas dentro de descrições (dl) no IE */
+/* Corrige bordas nas listas dentro de descrições (dl) no IE */
+/* Corrige a orientação da fonte nas listas dentro de descrições (dl) no IE */
+/*

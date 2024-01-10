@@ -7,7 +7,7 @@ html {
     padding: 0;
     justify-content: center; 
     background: #F3D8CF;
-    height: 100vh;
+    height: 100%;
     display: flex;
     max-width: 2500px;
     max-height: 5395px;
@@ -33,7 +33,7 @@ html {
 }
 
 .nav-right{
-    display: flex;
+  display: flex;
   justify-content: flex-end; /* Alinha os itens à direita do contêiner */
   align-items: center; /* Centraliza verticalmente os itens */
 }
@@ -52,7 +52,7 @@ html {
 }
 
 .bemVindo {
-  display: block;
+  display:grid;
   overflow: hidden;
   position: relative;
   }
@@ -70,16 +70,14 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 8vh;
+    font-size: 6vh;
     font-family: 'cursiva', cursive;
     z-index: 2; /* Coloca o texto acima da imagem e do overlay */
   }
   
   .bemVindo::before {
     content: ""; /* Adiciona um pseudo-elemento para controle do espaçamento */
-    display: block;
-    padding-top: 7%;
-    
+    display: block;   
   }
   
   /* Adiciona um overlay para melhor legibilidade do conteúdo sobre a imagem */
@@ -102,8 +100,8 @@ html {
   gap: 20px; /* Espaço entre as colunas */
   width: 98%; /* Define a largura total do container */
   background: #fff;
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
   padding: 1% 1% 1% 1%;
+  margin: 0; /* Retira as margens */
 }
 
 .espacamento{
@@ -121,18 +119,17 @@ html {
 }
 
 .text {     /* Texto Sobre Mim */
-  grid-column: 2 / 2; /* O texto ocupa a segunda coluna */
+  grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
   font-size: 5vh;
   text-align: center;
 }
 
 .text h1{
  padding-bottom: 5%;
+ font-size: 5vh;
+ margin: 0;
 }
 
-.show-text {
-  opacity: 1;
-}
 
 .row, .rowmt-2{   /*posicionamento das imagens de EVENTOS*/
     display: flex; 
@@ -171,24 +168,30 @@ html {
 
 .contatos {
     padding: 2%;
-    font-size: 5vh;
+    font-size: 3vh;
 }
 
 .contatos h1{
     padding-bottom: 5%;
+    font-size: 4vh;
+    font-style: italic;
 }
 
 #footer {         /* Todos os Direitos Reservados */
   background: rgba(80, 80, 80, 0.384);
   bottom: 0; /* Fixa o rodapé na parte inferior da tela */
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente o conteúdo */
-  font-size: 4vh;
   color: #000000;
   padding: 1vh; /* Ajuste conforme necessário */
   box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */   
+}
+
+#footer h6{
+  font-size: 2vh
 }
 
 .whatsapp {      /* Botão do Whatsapp */
