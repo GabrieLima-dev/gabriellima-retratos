@@ -23,7 +23,7 @@
         font-size: 6vw; /* Ajuste conforme necessário para telas menores */
       }
 
-    .container {
+    .sobreMim {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,12 +32,12 @@
         padding: 6% 1% 1% 1%;
     }
 
-    .container .foto {
+    .sobreMim .foto {
         max-width: 100%; /* Ajuste a largura da foto conforme necessário */
         min-width: 100%; 
     }
 
-    .container .sobreMim {
+    .sobreMim .sobreMim {
         text-align: center;
     }
 

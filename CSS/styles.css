@@ -9,8 +9,8 @@ html {
     background: #F3D8CF;
     height: 100%;
     display: flex;
-    max-width: 2500px;
-    max-height: 5395px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .navbar {
@@ -23,8 +23,8 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 1000; /* Garante que o navbar apareça acima de outros elementos na página */
-    max-width: 2500px;
-    max-height: 5395px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .nav-left{
@@ -94,18 +94,15 @@ html {
     mix-blend-mode: multiply; /* Adiciona modo de mistura para aplicar o overlay na imagem */
   }
 
-.container {
+.sobreMim {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
   gap: 20px; /* Espaço entre as colunas */
-  width: 98%; /* Define a largura total do container */
+  width: 100%; /* Define a largura total do container */
+  min-height: 100vh;
   background: #fff;
   padding: 1% 1% 1% 1%;
   margin: 0; /* Retira as margens */
-}
-
-.espacamento{
-  padding-bottom: 1%;
 }
 
 .photoEu img {  /* Imagem Sobre Mim */
@@ -120,7 +117,7 @@ html {
 
 .text {     /* Texto Sobre Mim */
   grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: center;
 }
 
@@ -130,6 +127,9 @@ html {
  margin: 0;
 }
 
+.espacamento{
+  padding-bottom: 1%;
+}
 
 .row, .rowmt-2{   /*posicionamento das imagens de EVENTOS*/
     display: flex; 
