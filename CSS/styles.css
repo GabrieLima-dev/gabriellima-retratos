@@ -59,10 +59,11 @@ html {
   overflow: hidden;
   position: relative;
   }
-  
-  .bemVindo img {
+
+.bemVindo img {
   width: 100%;
-  height: auto; /* Mantém a proporção original da imagem */
+  height:45vw; /* Mantém a proporção original da imagem */
+  object-fit: cover;
   }
 
   .bemVindo .textoBemVindo {
@@ -73,7 +74,7 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 6vh;
+    font-size: 3vw;
     font-family: 'cursiva', cursive;
     z-index: 2; /* Coloca o texto acima da imagem e do overlay */
   }
@@ -102,16 +103,14 @@ html {
   grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
   gap: 20px; /* Espaço entre as colunas */
   width: 100%; /* Define a largura total do container */
-  
-  background: linear-gradient(to bottom, #fff 96%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to bottom, #fff 96%, rgba(0, 0, 0, 0));
   padding: 1% 1% 1% 1%;
-   
 }
 
 .photoEu img {  /* Imagem Sobre Mim */
   display: block; /* Garante que a margem automática funcione corretamente */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  width: 100%;
+  width: 50vw;
   height:auto; /* Mantém a proporção original da imagem */
   max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
   border-radius: 50px;
@@ -151,9 +150,8 @@ html {
 }
 
 .photo img {
-  width: 100%;
-  height: 500px;
-  max-height: 100%;
+  width: 30vw;
+  height: 70vh;
   border-radius: 20px;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -178,12 +176,12 @@ html {
 
 .contatos {
     padding: 2%;
-    font-size: 3vh;
+    font-size: 2vw;
 }
 
 .contatos h1{
     padding-bottom: 5%;
-    font-size: 4vh;
+    font-size: 3vw;
     font-style: italic;
 }
 
@@ -201,7 +199,7 @@ html {
 }
 
 #footer h6{
-  font-size: 2vh
+  font-size: 1vw
 }
 
 .whatsapp {      /* Botão do Whatsapp */

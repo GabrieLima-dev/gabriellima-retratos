@@ -1,49 +1,30 @@
-@media (max-width: 1060px){
-    .overlay-text{
-        font-size:  1vh;
-    }
-    
-}
-
-@media (max-width: 520px){
-    .overlay-text{
-        font-size:  0.5vh;
-    }
-    
-}
-/* Estilos para telas pequenas (máximo de 770 pixels) */
 @media (max-width: 770px) {
 
     .bemVindo{
-        max-width: 100%; /* Ajuste a largura da foto conforme necessário */
+        max-width: 100%;
         min-width: 100%; 
     }
-
-    .bemVindo .textoBemVindo {
-        font-size: 6vw; /* Ajuste conforme necessário para telas menores */
-      }
 
     .sobreMim {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding: 6% 1% 1% 1%;
-        text-align: center;
     }
 
-    .sobreMim .foto {
-        max-width: 100%; /* Ajuste a largura da foto conforme necessário */
+    /* .sobreMim .foto {
+        max-width: 100%;
         min-width: 100%; 
-    }
+    } */
 
-    .text {
-        grid-column: 1 / -1;
-        font-size: 2vh;
-    }
+    /* .photo img {
+        align-items: center;
+    } */
 
-    .text h1{
-        font-size: 3vh;
+}
+
+@media (max-width: 575px) {
+    .photo img {
+        width: 90vw;
+        height: 60vh;
+        padding-bottom: 1%;
     }
 }
