@@ -18,6 +18,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    
     background: rgba(255, 255, 255, 0.384);
     display: flex;
     justify-content: space-between;
@@ -29,7 +30,8 @@ html {
 
 .nav-left{
     width: 10%;
-    height: 10%; 
+    padding-top: 0%;
+    
 }
 
 .nav-right{
@@ -41,7 +43,8 @@ html {
 .navbar a {
     font-weight: bold;
     color: #000000;
-    padding: 20px 20px;
+    padding: 10px 20px;
+    padding-top: 0%;
     border-radius: 50px;
     transition: 0.5s; 
 }
@@ -99,31 +102,33 @@ html {
   grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas de largura igual */
   gap: 20px; /* Espaço entre as colunas */
   width: 100%; /* Define a largura total do container */
-  min-height: 100vh;
-  background: #fff;
+  
+  background: linear-gradient(to bottom, #fff 96%, rgba(255, 255, 255, 0));
   padding: 1% 1% 1% 1%;
-  margin: 0; /* Retira as margens */
+   
 }
 
 .photoEu img {  /* Imagem Sobre Mim */
   display: block; /* Garante que a margem automática funcione corretamente */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
   width: 100%;
-  height: auto; /* Mantém a proporção original da imagem */
+  height:auto; /* Mantém a proporção original da imagem */
   max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
   border-radius: 50px;
   transition: transform 0.3s ease;
+  box-shadow: 0 0 60px rgba(240, 217, 64, 0.822), /* Sombra branca ao redor da imagem */
+              0 0 20px rgba(240, 217, 64, 1) inset; /* Gradiente transparente ao redor da imagem */
 }
 
 .text {     /* Texto Sobre Mim */
   grid-column: 2 / 3; /* O texto ocupa a segunda coluna */
-  font-size: 4vh;
+  font-size: 2vw;
   text-align: center;
 }
 
 .text h1{
  padding-bottom: 5%;
- font-size: 5vh;
+ font-size: 3vw;
  margin: 0;
 }
 
@@ -147,11 +152,16 @@ html {
 
 .photo img {
   width: 100%;
-  height: auto;
+  height: 500px;
   max-height: 100%;
   border-radius: 20px;
   transition: transform 0.3s ease;
   overflow: hidden;
+}
+
+.photo img:hover{
+  box-shadow: 0 0 50px rgb(255, 255, 255), /* Sombra branca ao redor da imagem */
+              0 0 70px rgb(255, 255, 255) inset; /* Gradiente transparente ao redor da imagem */
 }
 
 .overlay-text {       /* texto de Eventos */

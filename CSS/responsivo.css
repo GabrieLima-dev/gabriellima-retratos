@@ -30,6 +30,7 @@
         align-items: center;
         gap: 30px;
         padding: 6% 1% 1% 1%;
+        text-align: center;
     }
 
     .sobreMim .foto {
@@ -37,16 +38,12 @@
         min-width: 100%; 
     }
 
-    .sobreMim .sobreMim {
-        text-align: center;
-    }
-
     .text {
         grid-column: 1 / -1;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .text h1{
-        font-size: 4vh;
+        font-size: 3vh;
     }
 }
