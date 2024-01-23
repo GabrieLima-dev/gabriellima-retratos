@@ -68,47 +68,41 @@
 
         <div class="espacamento"></div>
 
-      <section id="eventos">
+      <section id="eventos" class="eventos">
         <div class="row">
-          <div class="photo col-sm-4">
-            <a href="./evento1.html" target="_blank" title="Evento 1">
+          <div class="photo col-sm-4" data-evento="evento1">
+            
               <img src="./imagens/eventos/Bento/Bento-3.png" alt="Evento 1" class="enlarge-image" />
-            </a>
+            
             <div class="overlay-text">BENTO</div>
           </div>
-        <div class="photo col-sm-4">
-            <a href="./evento2.html" target="_blank" title="Evento 2">
+        <div class="photo col-sm-4" data-evento="evento2">
+            
               <img src="./imagens/eventos/almir/mariquinha78-24.jpg" alt="Evento 2" class="enlarge-image" />
-            </a>
+            
             <div class="overlay-text">Almir Show</div>
           </div>
-          <div class="photo col-sm-4">
-            <a href="./evento3.html" target="_blank" title="Evento 3">
+          <div class="photo col-sm-4" data-evento="evento3">
+            
               <img src="./imagens/eventos/festaBidu/_MG_1098.jpg" alt="Evento 3" class="enlarge-image" />
-            </a>
+         
             <div class="overlay-text">Festa Particular</div>
           </div>
           
         </div>
         <div class="row mt-2">
-          <div class="photo col-sm-4">
-            <a href="./evento4.html" target="_blank" title="Evento 4">
+          <div class="photo col-sm-4" data-evento="evento4">
+            
               <img src="./imagens/eventos/GordinhoDeLuxo/GordinhoDeLuxo-7.png" alt="Evento 4" class="enlarge-image" />
-            </a>
+            
             <div class="overlay-text">Gordinho de Luxo</div>
           </div>
-          <div class="photo col-sm-4">
-            <a href="./evento5.html" target="_blank" title="Evento 5">
+          <div class="photo col-sm-4" data-evento="evento5">
+           
               <img src="./imagens/eventos/ordinals/1 (17).jpg" alt="Evento 5" class="enlarge-image" />
-            </a>
+            
             <div class="overlay-text">Ensaio Ordinals</div>
           </div>
-          <!-- <div class="photo col-sm-4">
-            <a href="./evento6.html" target="_blank" title="Evento 6">
-              <img src="./imagens/eu.jpg" alt="Evento 6" class="enlarge-image" />
-            </a>
-            <div class="overlay-text">Texto do Evento 6</div>
-          </div> -->
         </div>
         
       </section>
@@ -137,6 +131,94 @@
         <h6>Todos os direitos Reservados - Copyright © 2024</h6>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  // Função para validar o login
+  function validarLogin(evento) {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    var credenciaisEventos = {
+    'evento1': { usuario: 'a', senha: 'a', pagina: './evento1.html' },
+    'evento2': { usuario: 'a', senha: 'a', pagina: './evento2.html' },
+    'evento3': { usuario: 'a', senha: 'a', pagina: './evento3.html' },
+    'evento4': { usuario: 'a', senha: 'a', pagina: './evento4.html' },
+    'evento5': { usuario: 'a', senha: 'a', pagina: './evento5.html' },
+    
+  };
+// Verifica se o evento existe nas credenciais
+if (evento in credenciaisEventos) {
+    var credenciaisEvento = credenciaisEventos[evento];
+
+    // Compara usuário e senha
+    if (username === credenciaisEvento.usuario && password === credenciaisEvento.senha) {
+      window.location.href = credenciaisEvento.pagina;
+    } else {
+      alert("Usuário ou senha incorretos. Tente novamente.");
+    }
+  } else {
+    alert("Evento não reconhecido.");
+  }
+}
+
+  // Seleciona todos os elementos com a classe 'photo'
+  var eventos = document.querySelectorAll('.photo');
+
+  // Adiciona um listener de clique para cada elemento
+  eventos.forEach(function (evento) {
+    evento.addEventListener('click', function () {
+      // Exibe a modal de login passando o nome do evento como parâmetro
+      exibirModalLogin(evento.dataset.evento);
+    });
+  });
+
+  function exibirModalLogin(evento) {
+    // Cria um elemento div para a modal
+    var modal = document.createElement('div');
+          modal.classList.add('modal', 'fade');
+    
+          // Adiciona o conteúdo HTML da modal
+          modal.innerHTML = `
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Nome de usuário:</label>
+                  <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Senha:</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="loginButton">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      `;
+
+    // Adiciona a modal ao corpo do documento
+  document.body.appendChild(modal);
+
+// Adiciona um event listener para o botão de login
+var loginButton = modal.querySelector('#loginButton');
+loginButton.addEventListener('click', function () {
+  validarLogin(evento);
+});
+
+// Inicializa a modal usando Bootstrap
+var modalInstance = new bootstrap.Modal(modal);
+
+// Exibe a modal
+modalInstance.show();
+  }
+});
+    </script>
   </body>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
